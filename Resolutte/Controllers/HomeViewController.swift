@@ -27,6 +27,8 @@ class HomeViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(UINib(nibName: K.goalCellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
+        tableView.estimatedRowHeight = 80
     }
 }
 
@@ -40,9 +42,12 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! GoalCell
         let goal = goals[indexPath.row]
-        cell.textLabel?.text = goal.title
+        
+        cell.titleLabel.text = goal.title
+        
+        
         
         return cell
     }

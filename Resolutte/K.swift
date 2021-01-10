@@ -8,7 +8,6 @@
 import Foundation
 
 struct K {
-    static let cellIdentifier = "cell"
+    static let cellIdentifier = "ReusableCell"
     static let goalCellNibName = "GoalCell"
-    static let goalCellIdentifier = "GoalCell"
 }
