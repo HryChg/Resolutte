@@ -3,13 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		965BD10E25AA8F0B0090218C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965BD10D25AA8F0B0090218C /* HomeViewController.swift */; };
+		965BD13925AAA22B0090218C /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965BD13825AAA22B0090218C /* K.swift */; };
+		965BD13E25AAA4690090218C /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965BD13D25AAA4690090218C /* Goal.swift */; };
+		965BD14325AAA6CC0090218C /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965BD14225AAA6CC0090218C /* Mock.swift */; };
 		96D39E7B25AA6AF2001B181F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D39E7A25AA6AF2001B181F /* AppDelegate.swift */; };
 		96D39E7D25AA6AF2001B181F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D39E7C25AA6AF2001B181F /* SceneDelegate.swift */; };
-		96D39E7F25AA6AF2001B181F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D39E7E25AA6AF2001B181F /* ViewController.swift */; };
 		96D39E8225AA6AF2001B181F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96D39E8025AA6AF2001B181F /* Main.storyboard */; };
 		96D39E8425AA6AF7001B181F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D39E8325AA6AF7001B181F /* Assets.xcassets */; };
 		96D39E8725AA6AF7001B181F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96D39E8525AA6AF7001B181F /* LaunchScreen.storyboard */; };
@@ -39,10 +42,13 @@
 /* Begin PBXFileReference section */
 		2E9255E6074193B38FD1B7A2 /* Pods-Resolutte.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resolutte.release.xcconfig"; path = "Target Support Files/Pods-Resolutte/Pods-Resolutte.release.xcconfig"; sourceTree = "<group>"; };
 		4DDD0FB7BEA76387EDB9CCB2 /* Pods_Resolutte.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Resolutte.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		965BD10D25AA8F0B0090218C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		965BD13825AAA22B0090218C /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		965BD13D25AAA4690090218C /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		965BD14225AAA6CC0090218C /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		96D39E7725AA6AF2001B181F /* Resolutte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resolutte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D39E7A25AA6AF2001B181F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96D39E7C25AA6AF2001B181F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		96D39E7E25AA6AF2001B181F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96D39E8125AA6AF2001B181F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96D39E8325AA6AF7001B181F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96D39E8625AA6AF7001B181F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,8 +103,33 @@
 				DD2765AEE82069B7EF915EC6 /* Pods-Resolutte.debug.xcconfig */,
 				2E9255E6074193B38FD1B7A2 /* Pods-Resolutte.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		965BD10925AA8E4E0090218C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				965BD10D25AA8F0B0090218C /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		965BD12C25AA94A10090218C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				96D39E8525AA6AF7001B181F /* LaunchScreen.storyboard */,
+				96D39E8025AA6AF2001B181F /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		965BD12D25AA94AC0090218C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				965BD13D25AAA4690090218C /* Goal.swift */,
+				965BD14225AAA6CC0090218C /* Mock.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		96D39E6E25AA6AF2001B181F = {
@@ -127,13 +158,14 @@
 		96D39E7925AA6AF2001B181F /* Resolutte */ = {
 			isa = PBXGroup;
 			children = (
+				965BD12D25AA94AC0090218C /* Model */,
+				965BD12C25AA94A10090218C /* Views */,
+				965BD10925AA8E4E0090218C /* Controllers */,
 				96D39E7A25AA6AF2001B181F /* AppDelegate.swift */,
 				96D39E7C25AA6AF2001B181F /* SceneDelegate.swift */,
-				96D39E7E25AA6AF2001B181F /* ViewController.swift */,
-				96D39E8025AA6AF2001B181F /* Main.storyboard */,
 				96D39E8325AA6AF7001B181F /* Assets.xcassets */,
-				96D39E8525AA6AF7001B181F /* LaunchScreen.storyboard */,
 				96D39E8825AA6AF7001B181F /* Info.plist */,
+				965BD13825AAA22B0090218C /* K.swift */,
 			);
 			path = Resolutte;
 			sourceTree = "<group>";
@@ -331,9 +363,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96D39E7F25AA6AF2001B181F /* ViewController.swift in Sources */,
+				965BD13925AAA22B0090218C /* K.swift in Sources */,
+				965BD14325AAA6CC0090218C /* Mock.swift in Sources */,
 				96D39E7B25AA6AF2001B181F /* AppDelegate.swift in Sources */,
 				96D39E7D25AA6AF2001B181F /* SceneDelegate.swift in Sources */,
+				965BD13E25AAA4690090218C /* Goal.swift in Sources */,
+				965BD10E25AA8F0B0090218C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
